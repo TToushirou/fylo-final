@@ -1,0 +1,123 @@
+
+
+/**************  Nav Bar Positioning ***************/ 
+
+// Nav Bar Positoning
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    border: 1px solid red;
+    min-height: 9vh;
+    
+}
+
+
+/************** Nav Link Positioning ***************/
+
+.navbar-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    padding-bottom: 12px;
+    justify-self: end;
+    overflow: hidden;
+    align-self: center;
+}
+
+
+/************** Basic Nav Link Styling ***************/
+
+
+// Nav Links color, size and font
+.navbar-items a {
+    color: white;
+    font-size: 14px;
+    font-family: $primaryFont;
+    margin-top: 16px;
+}
+
+// Nav Links decoration
+.navbar-items a:hover {
+    color: $cyan !important;
+    text-decoration: underline !important;
+}
+
+
+/************** End Of Nav  ***************/
+
+
+
+/************** Hero Positioning ***************/
+
+// Border Test of Hero Class
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+
+    border: 1px solid red;
+    
+}
+
+/************** Hero img Styling ***************/
+
+//Alt Tag Message 
+.hero-img {
+    color: $white;
+}
+
+// Hero img positioning
+.hero-img img {
+    display: flex;
+    margin: auto;
+    max-width:70%;
+
+}
+
+/************** Hero Content Styling  ***************/
+
+// Hero Text Color & Font
+.hero-text {
+    font-family: $primaryFont;
+    color: $white;
+}
+
+// H1 styling
+.hero-text h1 {
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 70%;
+}
+
+// P Styling
+.hero-text p {
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 45%;
+}
+
+// Button Styling 
+.hero-text button {
+    font-weight:bold;
+    font-size: 16px;
+    color: $white;
+    background-color: $cyan; 
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(to right, $cyan, $blue);
+    margin: auto;
+    display: flex;
+    padding: 10px 70px;
+    margin-bottom: 5rem;
+}
+
+/************** End Of Hero  ***************/
+

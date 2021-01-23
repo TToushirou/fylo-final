@@ -1,0 +1,167 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.wrapper {
+  padding: 25px 20px 50px 20px;
+  background: #1c2431 url(/images/bg-curvy-desktop.svg) no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+}
+
+@media screen and (min-width: 1399px) {
+  .wrapper {
+    padding: 52px 80px;
+  }
+}
+
+.wrapper .nav-brand img {
+  width: 95px;
+}
+
+@media screen and (min-width: 499px) {
+  .wrapper .nav-brand img {
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 999px) {
+  .wrapper .nav-brand img {
+    width: 180px;
+  }
+}
+
+@media screen and (min-width: 1399px) {
+  .wrapper .nav-brand img {
+    width: 235px;
+  }
+}
+
+/**************  Nav Bar Positioning ***************/
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1;
+  border: 1px solid red;
+  min-height: 9vh;
+}
+
+/************** Nav Link Positioning ***************/
+.navbar-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  padding-bottom: 12px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  overflow: hidden;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+/************** Basic Nav Link Styling ***************/
+.navbar-items a {
+  color: white;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  margin-top: 16px;
+}
+
+.navbar-items a:hover {
+  color: #65e2d9 !important;
+  text-decoration: underline !important;
+}
+
+/************** End Of Nav  ***************/
+/************** Hero Positioning ***************/
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 1;
+  border: 1px solid red;
+}
+
+/************** Hero img Styling ***************/
+.hero-img {
+  color: #ffffff;
+}
+
+.hero-img img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  max-width: 70%;
+}
+
+/************** Hero Content Styling  ***************/
+.hero-text {
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+}
+
+.hero-text h1 {
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 70%;
+}
+
+.hero-text p {
+  font-size: 16px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2rem;
+  width: 45%;
+}
+
+.hero-text button {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #65e2d9;
+  border-radius: 20px;
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background: linear-gradient(to right, #65e2d9, #339ecc);
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 70px;
+  margin-bottom: 5rem;
+}
+
+/************** End Of Hero  ***************/
+/*# sourceMappingURL=style.css.map */
