@@ -19,14 +19,14 @@ body {
 
 .wrapper {
   padding: 25px 20px 50px 20px;
-  background: #1c2431 url(/images/bg-curvy-mobile.svg) no-repeat;
+  background: #1c2431 url(/scss/images/bg-curvy-mobile.svg) no-repeat;
   background-size: contain;
   background-position: bottom center;
 }
 
 @media screen and (min-width: 899px) {
   .wrapper {
-    background: #1c2431 url(/images/bg-curvy-desktop.svg) no-repeat;
+    background: #1c2431 url(/scss/images/bg-curvy-desktop.svg) no-repeat;
     background-size: contain;
     background-position: bottom center;
   }
