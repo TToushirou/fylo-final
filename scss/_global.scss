@@ -24,11 +24,17 @@ body {
 //helper class for Header and Media Qs
 .wrapper {
     padding: 25px 20px 50px 20px;
-    background: $darkBlueIntroBG url(/images/bg-curvy-desktop.svg) no-repeat;
+    background: $darkBlueIntroBG url(/images/bg-curvy-mobile.svg) no-repeat;
     background-size: contain;
     background-position: bottom center;
 
-    @include breakpoint(xlarge) {
+    @include breakpoint(medium) {
+        background: $darkBlueIntroBG url(/images/bg-curvy-desktop.svg) no-repeat;
+        background-size: contain;
+        background-position: bottom center;
+    }
+
+    @include breakpoint(large) {
         padding: 52px 80px;
 
     }
@@ -45,7 +51,7 @@ body {
         }
 
         @include breakpoint(xlarge){
-            width: 235px;
+            width: 200px;
         }
 
 

@@ -1,4 +1,4 @@
-
+@import "breakpoints";
 
 /**************  Nav Bar Positioning ***************/ 
 
@@ -7,22 +7,37 @@
     display: flex;
     justify-content: space-between;
     z-index: 1;
-    border: 1px solid red;
     min-height: 9vh;
-    
 }
 
 
 /************** Nav Link Positioning ***************/
 
 .navbar-items {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 10px;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    width: 60%;
+    word-wrap: none;
     padding-bottom: 12px;
-    justify-self: end;
-    overflow: hidden;
-    align-self: center;
+
+    @include breakpoint(regular) {
+        max-width: 37%;
+    }
+
+    @include breakpoint(medium) {
+        max-width: 33%;
+    }
+
+    @include breakpoint(large) {
+        max-width: 30%;
+    }
+
+    @include breakpoint(xlarge) {
+        max-width: 20%;
+    }
+
+
 }
 
 
@@ -35,12 +50,31 @@
     font-size: 14px;
     font-family: $primaryFont;
     margin-top: 16px;
+
+    @include breakpoint(small) {
+        font-size: 15.5px;
+    }
+
+    @include breakpoint(regular) {
+        font-size: 17px;
+    }
+
+    @include breakpoint(medium) {
+        font-size: 17.5px;
+    }
+
+    @include breakpoint(large) {
+        font-size: 19.5px;
+    }
+
+
+
 }
 
 // Nav Links decoration
 .navbar-items a:hover {
-    color: $cyan !important;
-    text-decoration: underline !important;
+    color: $cyan;
+    text-decoration: underline;
 }
 
 
@@ -56,10 +90,7 @@
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
-    z-index: 1;
-
-    border: 1px solid red;
-    
+    z-index: 1;    
 }
 
 /************** Hero img Styling ***************/
@@ -71,9 +102,8 @@
 
 // Hero img positioning
 .hero-img img {
-    display: flex;
-    margin: auto;
-    max-width:70%;
+    width: 100%;
+    max-width:716px;
 
 }
 
