@@ -167,6 +167,10 @@ body {
 }
 
 .hero-img img {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   max-width: 716px;
 }
@@ -179,24 +183,94 @@ body {
 
 .hero-text h1 {
   font-weight: bold;
+  font-size: 24px;
   text-align: center;
   margin: auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  width: 70%;
+  width: 100%;
+}
+
+@media screen and (min-width: 499px) {
+  .hero-text h1 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 699px) {
+  .hero-text h1 {
+    font-size: 27.5px;
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 899px) {
+  .hero-text h1 {
+    font-size: 30px;
+    max-width: 70%;
+  }
+}
+
+@media screen and (min-width: 999px) {
+  .hero-text h1 {
+    font-size: 35px;
+    max-width: 75%;
+  }
+}
+
+@media screen and (min-width: 1399px) {
+  .hero-text h1 {
+    font-size: 40px;
+    max-width: 55%;
+  }
 }
 
 .hero-text p {
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   margin: auto;
   margin-bottom: 2rem;
-  width: 45%;
+  width: 100%;
+}
+
+@media screen and (min-width: 499px) {
+  .hero-text p {
+    font-size: 15px;
+    max-width: 85%;
+  }
+}
+
+@media screen and (min-width: 699px) {
+  .hero-text p {
+    font-size: 16px;
+    max-width: 82%;
+  }
+}
+
+@media screen and (min-width: 899px) {
+  .hero-text p {
+    font-size: 16.5px;
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 999px) {
+  .hero-text p {
+    font-size: 17px;
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 1399px) {
+  .hero-text p {
+    font-size: 18.5px;
+    max-width: 45%;
+  }
 }
 
 .hero-text button {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   color: #ffffff;
   background-color: #65e2d9;
   border-radius: 20px;
@@ -207,8 +281,22 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 70px;
+  padding: 8px 50px;
   margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 699px) {
+  .hero-text button {
+    padding: 9px 60px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 899px) {
+  .hero-text button {
+    padding: 10px 70px;
+    font-size: 17px;
+  }
 }
 
 /************** End Of Hero  ***************/
