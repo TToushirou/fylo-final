@@ -13,8 +13,9 @@
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-     <!-- My CSS-->
+     <!-- My CSS & JS lib CSS-->
      <link rel="stylesheet" href="./scss/style.css"
+     <link href="wow-master/css/libs/animate.css" rel="stylesheet" type="text/css">
 
      <!-- Required meta tags -->
      <meta charset="utf-8">
@@ -22,18 +23,19 @@
 
 
      <!-- Title and web page logo-->
-     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    
- 
+     <link rel="icon" type="image/png" sizes="32x32" href="/scss/images/favicon-32x32.png">
      <title>Fylo Landing Page</title>
     </head>
 
     <body>
         <!-- JS Script -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-        <script> 
+        <script src="wow-master/dist/wow.min.js" type="text/javascript"></script> 
+        <script type="text/javascript">
           new WOW().init(); 
         </script>
+        
+        
         
         <!-- Header Wapper (helper class) -->
         <header class="wrapper">
@@ -73,6 +75,48 @@
                 </div>
             </section>
         </header>
-       
+
+        
+        <section class="features">
+            <div class="access wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                <img class="access-icon" src="/scss/images/icon-access-anywhere.svg" alt="Access Your Files Anywhere">
+                <h3 class="access-header">
+                    Acess your files, anywhere
+                </h3>
+                <p class="access-text">
+                    The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.
+                </p>
+            </div>
+
+            <div class="security wow fadeInRight" data-wow-delay="0.5s"  style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
+                <img class="security-icon" src="/scss/images/icon-security.svg" alt="Access Your Files Anywhere">
+                <h3 class="security-header">
+                    Security you can trust
+                </h3>
+                <p class="access-text">
+                    2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.
+                </p>
+            </div>
+
+            <div class="collaboration wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                <img class="collaboration-icon" src="/scss/images/icon-collaboration.svg" alt="Access Your Files Anywhere">
+                <h3 class="collaboration-header">
+                    Real-time collaboration
+                </h3>
+                <p class="collaboration-text">
+                    Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.
+                </p>
+            </div>
+
+            <div class="files wow fadeInRight" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInRight;">
+                <img class="files-icon" src="/scss/images/icon-any-file.svg" alt="Access Your Files Anywhere">
+                <h3 class="files-header">
+                    Store any type of file
+                </h3>
+                <p class="files-text">
+                     Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.
+                </p>
+            </div>
+        </section>
     </body>
 </html>
