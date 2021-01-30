@@ -1,4 +1,69 @@
+@import "breakpoints";
+
 .features {
-    border: 1px solid red; 
+    background-color: $darkBlueMainBG;
 }
 
+
+.features-container {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include breakpoint(regular) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+.features-container .item {
+    text-align: center;
+    width: 87%;
+    margin: 40px;
+
+    @include breakpoint(regular) {
+        width: 70%;
+    }
+}
+
+.features-container img {
+    width: 25%;    
+    
+    @include breakpoint(regular) {
+        width: 25%;
+    }
+}
+
+.features-container h3 {
+    font-family: $primaryFont;
+    font-weight: bold;
+    font-size: 20px;
+    color: $white;
+    padding: 8px;
+
+}
+
+.features-container p {
+    font-family: $primaryFont;
+    color: $white;
+    font-size: 14px;
+
+    @include breakpoint(medium) {
+        font-size: 15px;
+    }
+
+}
+
+/************** End Of Feature Section  ***************/
+
+.description {
+    background-color: $darkBlueMainBG;
+    font-family: $primaryFont;
+    color: $white;
+}
+
+
+.description-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}

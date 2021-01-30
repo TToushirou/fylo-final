@@ -19,14 +19,14 @@ body {
 
 .wrapper {
   padding: 25px 20px 50px 20px;
-  background: #1c2431 url(/scss/images/bg-curvy-mobile.svg) no-repeat;
+  background: #1c2431 url(../scss/images/bg-curvy-mobile.svg) no-repeat;
   background-size: contain;
   background-position: bottom center;
 }
 
 @media screen and (min-width: 899px) {
   .wrapper {
-    background: #1c2431 url(/scss/images/bg-curvy-desktop.svg) no-repeat;
+    background: #1c2431 url(../scss/images/bg-curvy-desktop.svg) no-repeat;
     background-size: contain;
     background-position: bottom center;
   }
@@ -300,24 +300,77 @@ body {
 }
 
 /************** End Of Hero  ***************/
-.item-a {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-area: main;
+.features {
+  background-color: #181f2a;
 }
 
-.container {
+.features-container {
   display: -ms-grid;
   display: grid;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
-  row-gap: 15px;
-  -ms-grid-columns: 50px 50px 50px 50px;
-      grid-template-columns: 50px 50px 50px 50px;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-      grid-template-areas: ". main main ." ". main main .";
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 699px) {
+  .features-container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.features-container .item {
+  text-align: center;
+  width: 87%;
+  margin: 40px;
+}
+
+@media screen and (min-width: 699px) {
+  .features-container .item {
+    width: 70%;
+  }
+}
+
+.features-container img {
+  width: 25%;
+}
+
+@media screen and (min-width: 699px) {
+  .features-container img {
+    width: 25%;
+  }
+}
+
+.features-container h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 8px;
+}
+
+.features-container p {
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 899px) {
+  .features-container p {
+    font-size: 15px;
+  }
+}
+
+/************** End Of Feature Section  ***************/
+.description {
+  background-color: #181f2a;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+}
+
+.description-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 /*# sourceMappingURL=style.css.map */
