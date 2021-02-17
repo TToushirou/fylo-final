@@ -1,21 +1,31 @@
 @import "breakpoints";
 
+/************** Features Section Coloring ***************/
+
+// coloring used in section
 .features {
     background-color: $darkBlueMainBG;
 }
 
+/************** Features Layout Build ***************/
 
+// type of layout 
 .features-container {
     display: grid;
     grid-template-columns: 1fr;
-    justify-self: center;
+    padding-right: 30px;
+
 
     @include breakpoint(regular) {
         grid-template-columns: 1fr 1fr;
+
     }
 
 }
 
+/************** Features Section Styling ***************/
+
+// item var placement 
 .features-container .item {
     text-align: center;
     width: 87%;
@@ -26,6 +36,7 @@
     }
 }
 
+// item img sizes
 .features-container img {
     width: 25%;    
     
@@ -34,6 +45,9 @@
     }
 }
 
+/************** Features Section Content ***************/
+
+// h3 styling
 .features-container h3 {
     font-family: $primaryFont;
     font-weight: bold;
@@ -43,6 +57,7 @@
 
 }
 
+// p styling
 .features-container p {
     font-family: $primaryFont;
     color: $white;
@@ -56,22 +71,33 @@
 
 /************** End Of Feature Section  ***************/
 
+
+/************** Description Section Coloring  ***************/
+
+// coloring used in section
 .description {
     background-color: $darkBlueMainBG;
     font-family: $primaryFont;
     color: $white;
 }
 
+/**************  Description Content Styling  ***************/
 
+// Img col positioning
 .col-md-7 img { 
     margin: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
     padding-top: 5px;
     display: flex;
     width: 100%;
-    max-width: 375px;
+    max-width: 420px;
+
+
 
     @include breakpoint(large){
         max-width: 90%; 
+
     }
 
     @include breakpoint(xlarge){
@@ -79,7 +105,7 @@
 
     }
 }
-
+// col positioning
 .col-md-7 {
     @include breakpoint(large){
         right: 30px;
@@ -90,13 +116,25 @@
     }
 }
 
-
+// content col positioning
 .col-md-5 {
-    padding-top: 40px;
     display: grid;
     grid-template-columns: 1fr;
+
+    @include breakpoint(large){
+        right: 40px;
+        padding-bottom: 80px;
+    }
+
+    @include breakpoint(xlarge){
+        right: 80px;
+        padding: 60px 15px 116px 15px;
+
+
+    }
 }
 
+// h2 styling 
 .col-md-5 h2 {
     font-weight: bold;
     font-size: 20px;
@@ -108,11 +146,28 @@
         font-size: 22px;
         margin-bottom: 20px;
     }
+
+    @include breakpoint(regular){
+        font-size: 26px;
+        text-align: start;
+        margin-bottom: 16px;
+        padding-top: 80px;
+    }
+
+    @include breakpoint(large){
+        font-size: 30px;
+        text-align: start;
+        margin-bottom: 0px;
+    }
+
+    @include breakpoint(xlarge){
+        font-size: 36px;
+    }
+
+
 }
 
-
-
-
+// p styling
 .col-md-5 p {
     font-size: 14px;
     text-align: start;
@@ -122,8 +177,23 @@
         margin: 0px 0px 20px 14px;
 
     }
+
+    @include breakpoint(regular){
+        margin: 0px 0px 8px 5px;
+        
+    }
+
+    @include breakpoint(large){
+        margin: 0px 0px 0px 0px;
+    }
+
+    @include breakpoint(xlarge){
+        margin: 15px 5px 5px 0px;
+        font-size: 15.5px;
+    }
 }
 
+// a styling W/ Hover
 .col-md-5 a {
     color: $cyan;
     font-size: 12px;
@@ -136,13 +206,23 @@
         margin: 0px 0px 50px 14px;
     }
 
+    @include breakpoint(small){
+        margin: 0px 0px 50px 5px;
+    }
+
+    @include breakpoint(large){
+        margin: 0px 0px 0px 0px;
+    }
+
+    @include breakpoint(xlarge){
+        margin: 7px 0px 0px 0px;
+        font-size: 14.5px;
+    }
+
 }
 
 .col-md-5 a:hover {
     color: $white;
 }
-
-
-
 
 /************** End Of Description Section  ***************/

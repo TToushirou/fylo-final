@@ -137,7 +137,7 @@ body {
 
 @media screen and (min-width: 999px) {
   .navbar-items a {
-    font-size: 19.5px;
+    font-size: 18px;
   }
 }
 
@@ -300,17 +300,18 @@ body {
 }
 
 /************** End Of Hero  ***************/
+/************** Features Section Coloring ***************/
 .features {
   background-color: #181f2a;
 }
 
+/************** Features Layout Build ***************/
 .features-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  padding-right: 30px;
 }
 
 @media screen and (min-width: 699px) {
@@ -320,6 +321,7 @@ body {
   }
 }
 
+/************** Features Section Styling ***************/
 .features-container .item {
   text-align: center;
   width: 87%;
@@ -342,6 +344,7 @@ body {
   }
 }
 
+/************** Features Section Content ***************/
 .features-container h3 {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -363,20 +366,24 @@ body {
 }
 
 /************** End Of Feature Section  ***************/
+/************** Description Section Coloring  ***************/
 .description {
   background-color: #181f2a;
   font-family: "Raleway", sans-serif;
   color: #ffffff;
 }
 
+/**************  Description Content Styling  ***************/
 .col-md-7 img {
   margin: auto;
+  margin-bottom: 30px;
+  margin-top: 20px;
   padding-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  max-width: 375px;
+  max-width: 420px;
 }
 
 @media screen and (min-width: 999px) {
@@ -404,11 +411,24 @@ body {
 }
 
 .col-md-5 {
-  padding-top: 40px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 999px) {
+  .col-md-5 {
+    right: 40px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1399px) {
+  .col-md-5 {
+    right: 80px;
+    padding: 60px 15px 116px 15px;
+  }
 }
 
 .col-md-5 h2 {
@@ -425,6 +445,29 @@ body {
   }
 }
 
+@media screen and (min-width: 699px) {
+  .col-md-5 h2 {
+    font-size: 26px;
+    text-align: start;
+    margin-bottom: 16px;
+    padding-top: 80px;
+  }
+}
+
+@media screen and (min-width: 999px) {
+  .col-md-5 h2 {
+    font-size: 30px;
+    text-align: start;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1399px) {
+  .col-md-5 h2 {
+    font-size: 36px;
+  }
+}
+
 .col-md-5 p {
   font-size: 14px;
   text-align: start;
@@ -434,6 +477,25 @@ body {
 @media screen and (min-width: 400px) {
   .col-md-5 p {
     margin: 0px 0px 20px 14px;
+  }
+}
+
+@media screen and (min-width: 699px) {
+  .col-md-5 p {
+    margin: 0px 0px 8px 5px;
+  }
+}
+
+@media screen and (min-width: 999px) {
+  .col-md-5 p {
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+@media screen and (min-width: 1399px) {
+  .col-md-5 p {
+    margin: 15px 5px 5px 0px;
+    font-size: 15.5px;
   }
 }
 
@@ -449,6 +511,25 @@ body {
 @media screen and (min-width: 400px) {
   .col-md-5 a {
     margin: 0px 0px 50px 14px;
+  }
+}
+
+@media screen and (min-width: 499px) {
+  .col-md-5 a {
+    margin: 0px 0px 50px 5px;
+  }
+}
+
+@media screen and (min-width: 999px) {
+  .col-md-5 a {
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+@media screen and (min-width: 1399px) {
+  .col-md-5 a {
+    margin: 7px 0px 0px 0px;
+    font-size: 14.5px;
   }
 }
 
