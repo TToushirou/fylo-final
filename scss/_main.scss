@@ -206,11 +206,21 @@
     font-size: 12px;
     text-align: start;
     margin: 0px 0px 50px 7px;
-    text-decoration: underline;
-    text-underline-position: under;
+    background-image: url(./images/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    border-bottom: 1px solid $cyan;
+    width: 36%;
+    transition: all 300ms ease-in-out;
 
+    &:hover {
+        color: $white;
+        border-bottom: 1px solid $white;   
+    }
+    
     @include breakpoint(micro){
         margin: 0px 0px 50px 14px;
+        width: 32%;
     }
 
     @include breakpoint(small){
@@ -219,10 +229,12 @@
 
     @include breakpoint(regular){
         margin: 0px 0px 50px 5px;
+        width: 45%;
     }
 
     @include breakpoint(large){
         margin: 0px 0px 0px 0px;
+        width: 34%;
     }
 
     @include breakpoint(xlarge){
@@ -232,9 +244,6 @@
 
 }
 
-.col-md-5 a:hover {
-    color: $white;
-}
 
 /************** End Of Description Section  ***************/
 
@@ -261,8 +270,14 @@
 
 // global col-md-4 styling 
 .col-md-4 {
-    padding: 25px 15px 5px 15px;
+    padding: 25px 15px 20px 15px;
     margin: 0px 15px 30px 15px;
+    border-radius: 5px;
+
+
+   @include breakpoint(regular){
+       
+   }
 }
 
 // P1 and Profile 1 styling 
@@ -272,16 +287,18 @@
 
 .profile1 {
     max-height: 35px;
+    border-radius: 50%;
 }
-
 
 // P2 and Profile 2 styling
 .p2 {
     font-size: 14px;
+    border-radius: 50%;
 }
 
 .profile2 {
     max-height: 35px;
+    border-radius: 50%;
 }
 
 // P3 and Profile 3 styling
@@ -291,4 +308,5 @@
 
 .profile3 {
     max-height: 35px;
+    border-radius: 50%;
 }

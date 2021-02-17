@@ -513,13 +513,24 @@ body {
   font-size: 12px;
   text-align: start;
   margin: 0px 0px 50px 7px;
-  text-decoration: underline;
-  text-underline-position: under;
+  background-image: url(./images/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  border-bottom: 1px solid #65e2d9;
+  width: 36%;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.col-md-5 a:hover {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 
 @media screen and (min-width: 400px) {
   .col-md-5 a {
     margin: 0px 0px 50px 14px;
+    width: 32%;
   }
 }
 
@@ -532,12 +543,14 @@ body {
 @media screen and (min-width: 699px) {
   .col-md-5 a {
     margin: 0px 0px 50px 5px;
+    width: 45%;
   }
 }
 
 @media screen and (min-width: 999px) {
   .col-md-5 a {
     margin: 0px 0px 0px 0px;
+    width: 34%;
   }
 }
 
@@ -546,10 +559,6 @@ body {
     margin: 7px 0px 0px 0px;
     font-size: 14.5px;
   }
-}
-
-.col-md-5 a:hover {
-  color: #ffffff;
 }
 
 /************** End Of Description Section  ***************/
@@ -569,8 +578,9 @@ body {
 }
 
 .col-md-4 {
-  padding: 25px 15px 5px 15px;
+  padding: 25px 15px 20px 15px;
   margin: 0px 15px 30px 15px;
+  border-radius: 5px;
 }
 
 .p1 {
@@ -579,14 +589,17 @@ body {
 
 .profile1 {
   max-height: 35px;
+  border-radius: 50%;
 }
 
 .p2 {
   font-size: 14px;
+  border-radius: 50%;
 }
 
 .profile2 {
   max-height: 35px;
+  border-radius: 50%;
 }
 
 .p3 {
@@ -595,5 +608,6 @@ body {
 
 .profile3 {
   max-height: 35px;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */
