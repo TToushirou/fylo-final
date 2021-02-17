@@ -59,7 +59,7 @@
 
 // p styling
 .features-container p {
-    font-family: $primaryFont;
+    font-family: $secondaryFont;
     color: $white;
     font-size: 14px;
 
@@ -77,7 +77,6 @@
 // coloring used in section
 .description {
     background-color: $darkBlueMainBG;
-    font-family: $primaryFont;
     color: $white;
 }
 
@@ -87,7 +86,7 @@
 .col-md-7 img { 
     margin: auto;
     margin-bottom: 30px;
-    margin-top: 20px;
+    margin-top: 75px;
     padding-top: 5px;
     display: flex;
     width: 100%;
@@ -118,8 +117,14 @@
 
 // content col positioning
 .col-md-5 {
+    padding-bottom: 100px;
     display: grid;
     grid-template-columns: 1fr;
+
+    @include breakpoint(regular){
+        bottom: 22px;
+        margin-top: 75px;
+    }
 
     @include breakpoint(large){
         right: 40px;
@@ -136,6 +141,7 @@
 
 // h2 styling 
 .col-md-5 h2 {
+    font-family: $primaryFont;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
@@ -169,6 +175,7 @@
 
 // p styling
 .col-md-5 p {
+    font-family: $secondaryFont;
     font-size: 14px;
     text-align: start;
     margin: 0px 0px 15px 7px;
@@ -207,6 +214,10 @@
     }
 
     @include breakpoint(small){
+        margin: 0px 0px 50px 11px;
+    }
+
+    @include breakpoint(regular){
         margin: 0px 0px 50px 5px;
     }
 
@@ -226,3 +237,58 @@
 }
 
 /************** End Of Description Section  ***************/
+
+
+/************** Team Section Coloring  ***************/
+
+// coloring / fonts used in Team section
+
+.team {
+    font-family: $secondaryFont;
+    background-color: $darkBlueMainBG;
+    color: $white;
+}
+
+.col-md-4 {
+    background-color: $darkBlueTestimonialBG;
+
+}
+
+// quote styling 
+.quote {
+    height: 20px;
+}
+
+// global col-md-4 styling 
+.col-md-4 {
+    padding: 25px 15px 5px 15px;
+    margin: 0px 15px 30px 15px;
+}
+
+// P1 and Profile 1 styling 
+.p1 {
+    font-size: 14px;
+}
+
+.profile1 {
+    max-height: 35px;
+}
+
+
+// P2 and Profile 2 styling
+.p2 {
+    font-size: 14px;
+}
+
+.profile2 {
+    max-height: 35px;
+}
+
+// P3 and Profile 3 styling
+.p3 {
+    font-size: 14px;
+}
+
+.profile3 {
+    max-height: 35px;
+}
