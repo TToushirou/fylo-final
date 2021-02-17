@@ -271,13 +271,12 @@
 // global col-md-4 styling 
 .col-md-4 {
     padding: 25px 15px 20px 15px;
-    margin: 0px 15px 30px 15px;
     border-radius: 5px;
+}
 
-
-   @include breakpoint(regular){
-       
-   }
+.target-class {
+    max-width: 100%;
+    
 }
 
 // P1 and Profile 1 styling 
